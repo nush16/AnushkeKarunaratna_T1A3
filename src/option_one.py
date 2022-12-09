@@ -1,10 +1,8 @@
 import sys
-import time
 
 # option 1 (Calculate molar weight, density or number of mols) menu
 menu_options = (1, 2, 3, 4)
 
-# while True:
 def option_one_menu():
         print()
         print('-------Calculate molar weight, density or number of mols-------')
@@ -23,21 +21,22 @@ def option_one_menu():
         elif user_input1 == 2:
             print('To calculate the density of a compound we need to the mass(g) and volume(cm3) of the compound' )
             print()
-            mass = float(input('What is the mass (g)?: '))
-            volume = float(input('what is the volume (cm3)?: '))
+            mass = float(input('-> What is the mass (g)?: '))
+            volume = float(input('-> What is the volume (cm3)?: '))
+            print()
             # equation to calculate density
             density = mass / volume
-            time.sleep(1)
-            print('The density of the compound is', round(density, 2), 'g/cm3')
+            print('--> The density of the compound is', round(density, 2), 'g/cm3')
 
         elif user_input1 == 3:
             print('To calculate the number of mols of a compound we need to the mass(g) and molecular weight (g/mol) of the compound' )
             print()
-            mass = float(input('What is the mass (g)?: '))
-            molecular_mass = float(input('What is the molecular mass (g/mol)?: '))
+            mass = float(input('-> What is the mass (g)?: '))
+            molecular_mass = float(input('-> What is the molecular mass (g/mol)?: '))
+            print()
             # equation to calculate the number of mols
             mols = mass/molecular_mass
-            print('The number of mols, when mass is', mass, '(g) and molecular weight is',
+            print('--> The number of mols, when mass is', mass, '(g) and molecular weight is',
     molecular_mass, '(g/mol) is,', round(mols, 2), '(mol)')
 
         elif user_input1 == 4:
@@ -47,45 +46,6 @@ def option_one_menu():
             print()
             print('Option not available')
             
-
-
-
-
-
-
-        
-
-
-# molar weight function
-    # def molar_weight():
-    #     if user_input1 == 1:
-    #         print('To calculate the molar weight of a compound we need to the' )
-    
-    
-
-    # def density_calculation():
-    #     if user_input1 == 2:
-    #         print('To calculate the density of a compound we need to the mass(g) and volume(cm3) of the compound' )
-    #         mass = float(input('What is the mass (g)?: '))
-    #         volume = float(input('what is the volume (cm3)?: '))
-    #         # equation to calculate density
-    #         density = mass / volume
-    #         print('the density of the compound is', round(density, 2), 'g/cm3')
-
-
-
-
-    # def number_mols():
-    #     if user_input1 == 3:
-    #         print('To calculate the number of mols of a compound we need to the mass(g) and molecular weight (g/mol) of the compound' )
-    #         mass = float(input('What is the mass (g)?: '))
-    #         molecular_mass = float(input('What is the molecular mass (g/mol)?: '))
-    #         # equation to calculate the number of mols
-    #         mols = mass/molecular_mass
-    #         print('the number of mols, when mass is', mass, '(g) and molecular weight is',
-    # molecular_mass, '(g/mol) is,', round(mols, 2), '(mol)')
-
-
 
 
 # # calculate molecular weight
