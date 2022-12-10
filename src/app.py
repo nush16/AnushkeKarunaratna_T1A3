@@ -12,12 +12,12 @@ while True:
     print('-------Menu-------')
     print('press 1 : Calculate molar weight, density or number of mols')
     print('press 2 : Calculate PH')
-    print('press 3 : Identify compound')
+    print('press 3 : Identify compound (Simplified Molecular Input Line Entry System)')
     print('press 4 : Balance chemical equation')
     print()
     print('--Other Options--')
-    print('press 5 : help')
-    print('press 6 : exit')
+    print('press 5 : Help')
+    print('press 6 : Exit')
 
     print()
     user_input = int(input('Enter an option: '))
@@ -42,8 +42,10 @@ while True:
         time.sleep(4)
         continue
 
+    
     elif user_input == 3:
-        print('Identify compound')
+        from option_three import SmileCalculation
+        print()
         time.sleep(4)
         continue
 

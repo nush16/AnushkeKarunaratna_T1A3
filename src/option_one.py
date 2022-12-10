@@ -1,5 +1,6 @@
 import sys
 
+
 # option 1 (Calculate molar weight, density or number of mols) menu
 menu_options = (1, 2, 3, 4)
 
@@ -17,6 +18,13 @@ def option_one_menu():
         if user_input1 == 1:
             print('To calculate the molar weight of a compound we need to the' )
             print()
+            number_of_C = int(input('How many C?: '))
+            number_of_H = int(input('How many H?: '))
+            number_of_O = int(input('How many O?: '))
+            # Equation to calculate molecular weight
+            mol_weight = C *number_of_C + H*number_of_H + O*number_of_O
+            # molecular weight of substance
+            print("The molecular weight of this compound is", mol_weight, 'g/mol')
     
         elif user_input1 == 2:
             print('To calculate the density of a compound we need to the mass(g) and volume(cm3) of the compound' )
@@ -48,13 +56,13 @@ def option_one_menu():
             
 
 
-# # calculate molecular weight
-# # atomic masses of C,H and O
-# C = 12
-# H = 1
-# O = 16
+# # # calculate molecular weight
+# # # atomic masses of C,H and O
+# # C = 12
+# # H = 1
+# # O = 16
 
-# # User input
+# # # User input
 # number_of_C = int(input('How many C?: '))
 # number_of_H = int(input('How many H?: '))
 # number_of_O = int(input('How many O?: '))
