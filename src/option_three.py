@@ -8,7 +8,7 @@ class SmileCalculation:
     ol = molecule.count('OH')
 
     @classmethod
-    def calculate_carbon(self):
+    def calculate_carbon(cls):
         if SmileCalculation.nCarbons == 1:   
             x = 'Met'
 
@@ -40,7 +40,7 @@ class SmileCalculation:
         return x
     
     @classmethod
-    def functional(self):
+    def functional(cls):
         if SmileCalculation.oic_acid == 1:
             y = 'oic acid'
             dbond = dbond -1
@@ -55,7 +55,7 @@ class SmileCalculation:
         return y
         
     @classmethod
-    def calculate_double_bonds(self):
+    def calculate_double_bonds(cls):
         if SmileCalculation.dbond == 0:
             z = 'an'
         elif SmileCalculation.dbond == 1:

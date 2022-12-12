@@ -13,7 +13,7 @@ while True:
     print('press 1 : Calculate molar weight, density or number of mols')
     print('press 2 : Calculate PH')
     print('press 3 : Identify compound (Simplified Molecular Input Line Entry System)')
-    print('press 4 : Balance chemical equation')
+    print('press 4 : Element data')
     print()
     print('--Other Options--')
     print('press 5 : Help')
