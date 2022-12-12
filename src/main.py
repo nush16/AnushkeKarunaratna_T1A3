@@ -1,7 +1,7 @@
 import time
 import sys
-from option_one import *
-from option_two import *
+from modules.option_one import *
+from modules.option_two import *
 
 # Menu options
 menu_options = (1, 2, 3, 4, 5, 6)
@@ -44,7 +44,7 @@ while True:
 
     
     elif user_input == 3:
-        from option_three import SmileCalculation
+        from modules.option_three import SmileCalculation
         print()
         time.sleep(4)
         continue

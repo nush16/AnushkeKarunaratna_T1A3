@@ -16,11 +16,14 @@ def option_one_menu():
         user_input1 = int(input('Enter an option: '))
 
         if user_input1 == 1:
-            print('To calculate the molar weight of a compound we need to the' )
+            print('To calculate the molar weight of a compound we need to the element and how many of each element is in the compound' )
             print()
-            number_of_C = int(input('How many C?: '))
-            number_of_H = int(input('How many H?: '))
-            number_of_O = int(input('How many O?: '))
+            number_of_element1 = int(input('How many elements?: '))
+            number_of_element2 = int(input('How many elements?: '))
+            number_of_element3 = int(input('How many elements?: '))
+            number_of_element4 = int(input('How many elements?: '))
+            number_of_element5 = int(input('How many elements?: '))
+            number_of_element6 = int(input('How many elements?: '))
             # Equation to calculate molecular weight
             mol_weight = C *number_of_C + H*number_of_H + O*number_of_O
             # molecular weight of substance
