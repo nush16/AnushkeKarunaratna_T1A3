@@ -1,9 +1,29 @@
+import csv
+import pandas as pd
 
-def one_element_mw():
-    element_symb1 = input('-> What is the element (enter symbol): ')
-    qty_element1 = int(input('-> How many elements?: '))
-    mol_weight = element_symb1 * qty_element1
-    print("--> The molecular weight of this compound is", mol_weight, 'g/mol')
+df = pd.read_csv("./src/periodic_table/elements.csv", index_col='Symbol')
+# result = df[df['Symbol']== 'C']
+element_symb1 = input('-> What is the element (enter symbol): ')
+atomic = df.loc[element_symb1, 'Element']
+print(atomic)
+
+
+# with open ("./src/periodic_table/elements.csv", 'r') as file:
+#     csv_reader = csv.reader(file)
+
+#     for row in csvreader:
+#         print(row)   
+#         print(row['Element'])
+
+
+
+# def one_element_mw():
+# element_symb1 = input('-> What is the element (enter symbol): ')
+# if element_symb1 in csv_reader(['Symbol']):
+#         print(['AtomicMass']) 
+#         qty_element1 = int(input('-> How many elements?: '))
+#         mol_weight = element_symb1 * qty_element1
+#         print("--> The molecular weight of this compound is", mol_weight, 'g/mol')
 
 def two_element_mw():
     element_symb1 = input('-> What is the element (enter symbol): ')
