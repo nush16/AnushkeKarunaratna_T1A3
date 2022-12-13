@@ -1,5 +1,6 @@
 import sys
 
+from molar_weight import MolarWeight
 
 # option 1 (Calculate molar weight, density or number of mols) menu
 menu_options = (1, 2, 3, 4)
@@ -18,16 +19,7 @@ def option_one_menu():
         if user_input1 == 1:
             print('To calculate the molar weight of a compound we need to the element and how many of each element is in the compound' )
             print()
-            number_of_element1 = int(input('How many elements?: '))
-            number_of_element2 = int(input('How many elements?: '))
-            number_of_element3 = int(input('How many elements?: '))
-            number_of_element4 = int(input('How many elements?: '))
-            number_of_element5 = int(input('How many elements?: '))
-            number_of_element6 = int(input('How many elements?: '))
-            # Equation to calculate molecular weight
-            mol_weight = C *number_of_C + H*number_of_H + O*number_of_O
-            # molecular weight of substance
-            print("The molecular weight of this compound is", mol_weight, 'g/mol')
+            MolarWeight.one_element_mw()
     
         elif user_input1 == 2:
             print('To calculate the density of a compound we need to the mass(g) and volume(cm3) of the compound' )

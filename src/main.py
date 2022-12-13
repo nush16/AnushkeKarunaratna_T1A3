@@ -1,7 +1,7 @@
 import time
 import sys
-from modules.option_one import *
-from modules.option_two import *
+from modules.pH import *
+from modules.error import *
 
 # Menu options
 menu_options = (1, 2, 3, 4, 5, 6)
@@ -20,8 +20,9 @@ while True:
     print('press 6 : Exit')
 
     print()
-    user_input = int(input('Enter an option: '))
+    user_input = user_correct_input(('Enter an option: '))
     print()
+    
 
     if user_input not in menu_options:
         print('Invalid input!')
@@ -30,7 +31,8 @@ while True:
 
     elif user_input == 1:
         print('Calculate molar weight, density or number of mols')
-        option_one_menu()
+        from modules.option_maybe import CompoundProperties
+        print()
         time.sleep(4)
         continue
     
@@ -44,7 +46,7 @@ while True:
 
     
     elif user_input == 3:
-        from modules.option_three import SmileCalculation
+        from modules.smile_calculation import SmileCalculation
         print()
         time.sleep(4)
         continue
