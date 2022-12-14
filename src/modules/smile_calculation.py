@@ -1,6 +1,8 @@
+from modules.error import *
+
 
 class SmileCalculation:
-    molecule = str(input('Type the organic molecule (as SMILES format - Upper Case): '))
+    molecule = correct_smile_input('-> Type the organic molecule (as SMILES format): ')
     dbond = molecule.count('=')
     nCarbons = molecule.count('C')
     oic_acid = molecule.count('(C=O)OH')

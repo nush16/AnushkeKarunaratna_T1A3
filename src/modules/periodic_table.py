@@ -1,7 +1,8 @@
 from chempy.util import periodic as prd
+from modules.error import *
 
 # Number of elements from user  
-x = input("Enter the Element from the periodic table that you want information on: ")
+x = correct_str_input("-> Enter the Element from the periodic table that you want information on: ")
 print("Printing information on", x, "from the periodic table")
 print()
 # Displaying the periodic element information  
@@ -24,4 +25,4 @@ for a in range(1, 2):
   
     # # Displaying the atomic mass of element  
     print(prd.relative_atomic_masses[y])  
-print("Result for periodic elements is printed according to number you provided")  
+print("--> Data for element is printed according")  
