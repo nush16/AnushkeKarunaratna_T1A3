@@ -23,7 +23,6 @@ def solutions():
     solution_molarity = s.molarity
     print(solution_molarity)
 
-
 def dilutions():
     # formula - M1*V1=M2*V2
     formula_solution = correct_str_input('-> What is the formula of the solution?: ')

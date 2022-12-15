@@ -3,12 +3,14 @@ import sys
 from modules.ph_calculation import *
 from modules.error import *
 from modules.compoundproperties import *
+from modules.smile import *  
+from modules.periodic_table import *
 
 # Menu options
-menu_options = (1, 2, 3, 4, 5, 6)
+menu_options = (1, 2, 3, 4, 5)
 
 while True:
-    # Main Menu
+    # Print Main Menu
     print()
     print('-------Menu-------')
     print('press 1 : Calculate molar weight, density or number of mols')
@@ -17,8 +19,7 @@ while True:
     print('press 4 : Element data from the periodic table')
     print()
     print('--Other Options--')
-    print('press 5 : Help')
-    print('press 6 : Exit')
+    print('press 5 : Exit')
 
     print()
     user_input = correct_int_input('Enter an option: ')
@@ -40,6 +41,7 @@ while True:
         print('press 4 : Exit')
         print()
         user_input1 = correct_int_input('Enter an option: ')
+
         if user_input1 not in menu_options1:
             print("----> Not a valid input! Please try again <----")
             time.sleep()
@@ -59,7 +61,7 @@ while True:
         continue
     
     elif user_input == 2:
-        # Sub menu
+        # Sub Menu
         menu_options2 = (1, 2, 3, 4)
         print()
         print('-------Acidity(pH), making a solution and dilutions-------')
@@ -90,23 +92,17 @@ while True:
 
     elif user_input == 3:
         print()
-        from modules.smile_calculation import *
-        print()
-        time.sleep(4)
+        smile_calculation()
+        time.sleep(2)
         continue
 
     elif user_input == 4:
         print()
-        from periodic_table import *
-        time.sleep(4)
-        continue
-            
-    elif user_input == 5:
-        print('Help')
-        time.sleep(4)
+        periodic_table()
+        time.sleep(2)
         continue
                 
-    elif user_input == 6:
+    elif user_input == 5:
         print('Goodbye!')
         time.sleep(1)
         sys.exit()
