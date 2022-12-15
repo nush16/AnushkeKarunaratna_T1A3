@@ -3,8 +3,8 @@ import sys
 from modules.ph_calculation import *
 from modules.error import *
 from modules.compoundproperties import *
-from modules.smile import *  
 from modules.periodic_table import *
+from modules.chemical_formula import *
 
 # Menu options
 menu_options = (1, 2, 3, 4, 5)
@@ -92,7 +92,28 @@ while True:
 
     elif user_input == 3:
         print()
-        smile_calculation()
+        # Sub menu
+        menu_options1 = (1, 2, 3)
+        print()
+        print('-------Identify Chemicals and Chemical formulas-------')
+        print('press 1 : Identify the chemical formula')
+        print('press 2 : Identify the chemical')
+        print('press 3 : Exit')
+        print()
+        user_input1 = correct_int_input('Enter an option: ')
+
+        if user_input1 not in menu_options1:
+            print("----> Not a valid input! Please try again <----")
+            time.sleep()
+        elif user_input1 == 1:
+            identify_chemical_formula()
+            continue
+        elif user_input1 == 2:
+            identify_chemical()
+            continue
+        elif user_input1 == 3:
+            sys.exit()
+        print()
         time.sleep(2)
         continue
 

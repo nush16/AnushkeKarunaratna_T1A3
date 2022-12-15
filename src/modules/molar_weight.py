@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("./src/periodic_table/elements.csv", index_col='Symbol')
+df = pd.read_csv("./src/data/elements.csv", index_col='Symbol')
 
 class MolarWeight:
 
