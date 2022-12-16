@@ -47,17 +47,21 @@ while True:
             time.sleep(1)
         elif user_input1 == 1:
             calculate_molar_weight()
+            time.sleep(2)
             continue
         elif user_input1 == 2:
             calculate_density()
+            time.sleep(2)
             continue
         elif user_input1 == 3:
             calculate_mols()
+            time.sleep(2)
             continue
         elif user_input1 == 4:
+            print('Goodbye!')
             sys.exit()
         print()
-        time.sleep(2)
+        time.sleep(1)
         continue
     
     elif user_input == 2:
@@ -67,27 +71,31 @@ while True:
         print('-------Acidity(pH), making a solution and dilutions-------')
         print('press 1 : Calculate acidity')
         print('press 2 : Making a solution')
-        print('press 3 : Calculate diltuions')
+        print('press 3 : Calculate dilutions')
         print('press 4 : Exit')
         print()
         user_input2 = correct_int_input('Enter an option: ')
         if user_input2 not in menu_options2:
             print("----> Not a valid input! Please try again <----")
-            time.sleep()
+            time.sleep(1)
         elif user_input2 == 1:
             print('To calculate the pH please insert the concentration (moles per litre)' )
             ph()
+            time.sleep(2)
             continue
         elif user_input2 == 2:
             solutions()
+            time.sleep(2)
             continue
         elif user_input2 == 3:
             dilutions()
+            time.sleep(2)
             continue
         elif user_input2 == 4:
+            print('Goodbye!')
             sys.exit()
         print()
-        time.sleep(2)
+        time.sleep(1)
         continue
 
     elif user_input == 3:
@@ -114,9 +122,10 @@ while True:
             time.sleep(2)
             continue
         elif user_input1 == 3:
+            print('Goodbye!')
             sys.exit()
         print()
-        time.sleep(2)
+        time.sleep(1)
         continue
 
     elif user_input == 4:

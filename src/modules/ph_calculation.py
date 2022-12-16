@@ -4,7 +4,7 @@ from chemlib import Solution
 
 def ph():
     conc = correct_float_input('-> What is the concentration (moles per litre)?: ')
-    pH = -math.log(conc, 10)
+    pH = math.log(conc, 10)
     print()
     print('--> The pH is',round(pH,4),)
     print()
@@ -22,10 +22,10 @@ def solutions():
         solution = correct_float_input('-> How many liters of solution?: ')
         s = Solution.by_grams_per_liters(formula_solute,solute,solution)
         solution_molarity = s.molarity
-        print(solution_molarity)
+        print(round(solution_molarity,4))
     except IndexError:
         print()
-        print('--> Not a valid formula')
+        print('--> Not a valid solute')
 
 
 def dilutions():
