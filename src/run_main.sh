@@ -1,9 +1,9 @@
 # !/bin/bash
 # ./src/run_main.sh
 
-python3 ./src/main.py
+pip install -r ./src/requirements.txt
 
-pip install -r requirements.txt
+python3 ./src/main.py
 
 if ! [[ -x "$(command -v python)" ]]
 then
