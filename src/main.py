@@ -15,7 +15,7 @@ while True:
     print('-------Menu-------')
     print('press 1 : Calculate molar weight, density or number of mols')
     print('press 2 : Acidity(pH), making a solution and dilutions')
-    print('press 3 : Identify compound (Simplified Molecular Input Line Entry System)')
+    print('press 3 : Identify Chemicals and Chemical formulas')
     print('press 4 : Element data from the periodic table')
     print()
     print('--Other Options--')
@@ -96,15 +96,15 @@ while True:
         menu_options1 = (1, 2, 3)
         print()
         print('-------Identify Chemicals and Chemical formulas-------')
-        print('press 1 : Identify the chemical formula')
-        print('press 2 : Identify the chemical')
+        print('press 1 : Identify chemical formula')
+        print('press 2 : Identify chemical')
         print('press 3 : Exit')
         print()
         user_input1 = correct_int_input('Enter an option: ')
 
         if user_input1 not in menu_options1:
             print("----> Not a valid input! Please try again <----")
-            time.sleep()
+            time.sleep(1)
         elif user_input1 == 1:
             identify_chemical_formula()
             continue

@@ -1,27 +1,24 @@
 import pandas as pd
-
-
-# pd.read_csv("./src/data/chem.csv", sep='\t', engine='python')
+from modules.error import correct_chemical_input
 
 df1 = pd.read_csv("./src/data/chem.csv", index_col='Chemical')
 df2 = pd.read_csv("./src/data/chem.csv", index_col='formula')
 
 def identify_chemical_formula():  
-    Chemical = correct_element_input("-> Enter the chemical name to identify its chemical formula: ")
-    Chemical_formula = df1.loc[Chemical, 'formula']
-    print(f'--> The chemical formula of {Chemical} is {Chemical_formula}')
+    try:
+        identify_chemical = correct_chemical_input("-> Enter the chemical name to identify its chemical formula: ")
+        locate_chemical_formula = df1.loc[identify_chemical, 'formula']
+        print(f'--> The chemical formula of {identify_chemical} is {locate_chemical_formula}')
+    except KeyError:
+        print ('--> Chemical not found')
 
-def identify_chemical():  
-    Chemical_formula = correct_element_input("-> Enter chemical formula to identify the chemical: ")
-    Chemical = df2.loc[Chemical_formula, 'Chemical']
-    print(f'--> The chemical with a {Chemical_formula} is {Chemical}')   
+def identify_chemical():
+    try:
+        identify_chemical_formula = correct_chemical_input("-> Enter chemical formula to identify the chemical: ")
+        locate_chemical = df2.loc[identify_chemical_formula, 'Chemical']
+        print(f'--> The chemical with a {identify_chemical_formula} is {locate_chemical}')   
+    except KeyError:
+        print ('--> Chemical formula not found')
 
 
-def correct_element_input(prompt):
-     while True:
-        try:
-            user_element_input = str(input(prompt))
-            return user_element_input
-        except ValueError as e:
-            print("----> Not a valid input! Please try again <----")
-            print()
+

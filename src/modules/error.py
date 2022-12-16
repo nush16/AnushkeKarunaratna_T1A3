@@ -40,15 +40,17 @@ def correct_float_input(prompt):
             print("----> Not a valid input! Please try again <----")
             print()
 
-
-def correct_smile_input(prompt):
+#Chemical input error
+def correct_chemical_input(prompt):
      while True:
         try:
-            user_smile_input = str(input(prompt)) 
-            return user_smile_input
-        except ValueError as e:
+            Chemical = str(input(prompt))
+            return Chemical
+        except ValueError:
             print("----> Not a valid input! Please try again <----")
             print()
-        except NameError:
+        except KeyError:
             print("----> Not a valid input! Please try again <----")
             print()
+
+
