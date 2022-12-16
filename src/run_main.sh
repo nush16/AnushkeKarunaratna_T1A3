@@ -3,6 +3,8 @@
 
 python3 ./src/main.py
 
+pip install -r requirements.txt
+
 if ! [[ -x "$(command -v python)" ]]
 then
   echo 'Error: 
