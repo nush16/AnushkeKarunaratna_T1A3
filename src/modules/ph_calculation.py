@@ -16,20 +16,28 @@ def ph():
         print ('--> This is a base solution')
  
 def solutions():
-    formula_solute = correct_str_input('-> What is the formula of the solute?: ')
-    solute = correct_float_input('-> How many grams of solute?: ')
-    solution = correct_float_input('-> How many liters of solution?: ')
-    s = Solution.by_grams_per_liters(formula_solute,solute,solution)
-    solution_molarity = s.molarity
-    print(solution_molarity)
+    try:
+        formula_solute = correct_str_input('-> What is the formula of the solute?: ')
+        solute = correct_float_input('-> How many grams of solute?: ')
+        solution = correct_float_input('-> How many liters of solution?: ')
+        s = Solution.by_grams_per_liters(formula_solute,solute,solution)
+        solution_molarity = s.molarity
+        print(solution_molarity)
+    except IndexError:
+        print()
+        print('--> Not a valid formula')
+
 
 def dilutions():
-    # formula - M1*V1=M2*V2
-    formula_solution = correct_str_input('-> What is the formula of the solution?: ')
-    V1 = correct_float_input('-> What is the volume of the solution?: ')
-    M1 = correct_float_input('-> What is the molarity of the solution: ')
-    M2 = correct_float_input('-> What is the molarity after dilution?: ')
-    s = Solution(formula_solution, M1)
-    dilution = s.dilute(V1,M2)
-    print(dilution)
-
+    try:
+        # formula - M1*V1=M2*V2
+        formula_solution = correct_str_input('-> What is the formula of the solution?: ')
+        V1 = correct_float_input('-> What is the volume of the solution?: ')
+        M1 = correct_float_input('-> What is the molarity of the solution: ')
+        M2 = correct_float_input('-> What is the molarity after dilution?: ')
+        s = Solution(formula_solution, M1)
+        dilution = s.dilute(V1,M2)
+        print(dilution)
+    except IndexError:
+        print()
+        print('--> Not a valid formula')

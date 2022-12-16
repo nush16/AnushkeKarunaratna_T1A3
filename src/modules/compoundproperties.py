@@ -1,18 +1,5 @@
-import sys
 from modules.molar_weight import *
 from modules.error import *
-
-# class CompoundProperties:
-    # menu_options = (1, 2, 3, 4)
-    # print()
-    # print('-------Calculate molar weight, density or number of mols-------')
-    # print('press 1 : Calculate molar weight')
-    # print('press 2 : Calculate density')
-    # print('press 3 : Calculate number of mols')
-    # print('press 4 : Exit')
-
-    # print()
-    # user_input = correct_int_input('Enter an option: ')
 
 def calculate_molar_weight():
             print('To calculate the molar weight of a compound we need to know the element and how many of each element is in the compound' )
@@ -55,19 +42,7 @@ def calculate_mols():
             print('--> The number of mols, when mass is', mass, '(g) and molecular weight is',molecular_mass, '(g/mol) is,', round(mol, 2), '(mol)')
 
 
-# z = CompoundProperties()
 
-# if z.user_input == 1:
-#     z.calculate_molar_weight()
-# elif z.user_input == 2:
-#     z.calculate_density()
-# elif z.user_input == 3:
-#     z.calculate_mols()
-# elif z.user_input == 4:
-#         sys.exit()
-# else:
-#     print()
-#     print('Option not available')
 
 
 

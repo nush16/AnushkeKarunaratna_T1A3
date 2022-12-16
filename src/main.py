@@ -44,7 +44,7 @@ while True:
 
         if user_input1 not in menu_options1:
             print("----> Not a valid input! Please try again <----")
-            time.sleep()
+            time.sleep(1)
         elif user_input1 == 1:
             calculate_molar_weight()
             continue
@@ -107,9 +107,11 @@ while True:
             time.sleep(1)
         elif user_input1 == 1:
             identify_chemical_formula()
+            time.sleep(2)
             continue
         elif user_input1 == 2:
             identify_chemical()
+            time.sleep(2)
             continue
         elif user_input1 == 3:
             sys.exit()

@@ -10,6 +10,7 @@ def identify_chemical_formula():
         locate_chemical_formula = df1.loc[identify_chemical, 'formula']
         print(f'--> The chemical formula of {identify_chemical} is {locate_chemical_formula}')
     except KeyError:
+        print()
         print ('--> Chemical not found')
 
 def identify_chemical():
@@ -18,6 +19,7 @@ def identify_chemical():
         locate_chemical = df2.loc[identify_chemical_formula, 'Chemical']
         print(f'--> The chemical with a {identify_chemical_formula} is {locate_chemical}')   
     except KeyError:
+        print()
         print ('--> Chemical formula not found')
 
 
