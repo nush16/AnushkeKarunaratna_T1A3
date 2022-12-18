@@ -20,6 +20,20 @@ Running Bash script
 
 ```bash ./src/run_main.sh```
 
+## **Design**
+
+### **General flowchart of app**
+![Main](./docs/imgs/mainmenu.jpg)
+
+### **Calculate molar weight, density or number of mols**
+![Main](./docs/imgs/1.jpg)
+
+### **Acidity(pH), making a solution and dilutions**
+![Main](./docs/imgs/2.jpg)
+### **Identify Chemicals and Chemical formulas**
+![Main](./docs/imgs/3.jpg)
+### **Element data from the periodic table**
+![Main](./docs/imgs/4.jpg)
 ## **Functionality & Features**
 
 ### **Main Menu**
