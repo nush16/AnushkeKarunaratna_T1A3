@@ -189,4 +189,5 @@ Trello - https://trello.com/b/k3Xc4LIL/t1a3
     
 ## **Acknowledgements**
 https://byjus.com/chemical-compound-formulas/ - data for chemicals and chemical formulas
+https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee- data for elements
 

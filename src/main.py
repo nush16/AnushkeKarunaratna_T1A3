@@ -47,15 +47,15 @@ while True:
             time.sleep(1)
         elif user_input1 == 1:
             calculate_molar_weight()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input1 == 2:
             calculate_density()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input1 == 3:
             calculate_mols()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input1 == 4:
             print('Goodbye!')
@@ -81,15 +81,15 @@ while True:
         elif user_input2 == 1:
             print('To calculate the pH please insert the concentration (moles per litre)' )
             ph()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input2 == 2:
             solutions()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input2 == 3:
             dilutions()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input2 == 4:
             print('Goodbye!')
@@ -115,11 +115,11 @@ while True:
             time.sleep(1)
         elif user_input1 == 1:
             identify_chemical_formula()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input1 == 2:
             identify_chemical()
-            time.sleep(2)
+            time.sleep(3)
             continue
         elif user_input1 == 3:
             print('Goodbye!')
