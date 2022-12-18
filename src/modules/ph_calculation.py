@@ -33,7 +33,7 @@ def dilutions():
         # formula - M1*V1=M2*V2
         formula_solution = correct_str_input('-> What is the formula of the solution?: ')
         V1 = correct_float_input('-> What is the volume of the solution?: ')
-        M1 = correct_float_input('-> What is the molarity of the solution: ')
+        M1 = correct_float_input('-> What is the molarity of the solution?: ')
         M2 = correct_float_input('-> What is the molarity after dilution?: ')
         s = Solution(formula_solution, M1)
         dilution = s.dilute(V1,M2)

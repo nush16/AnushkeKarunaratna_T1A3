@@ -20,16 +20,14 @@ Running Bash script
 
 ```bash ./src/run_main.sh```
 
-## **Designing**
-
 ## **Functionality & Features**
 
-### **Menu**
+### **Main Menu**
 As soon as the program is running a menu of options is available to choose from. Type in the number to acess the submenu's
 
 
 ```
--------Menu-------
+-------Main Menu-------
 press 1 : Calculate molar weight, density or number of mols
 press 2 : Acidity(pH), making a solution and dilutions
 press 3 : Identify Chemicals and Chemical formulas
@@ -96,10 +94,10 @@ Pressing two from the main menu gives access to the submenu for calculating acid
 -------Acidity(pH), making a solution and dilutions-------
 press 1 : Calculate acidity
 press 2 : Making a solution
-press 3 : Calculate diltuions
+press 3 : Calculate dilutions
 press 4 : Exit
 
-Enter an option: 
+Enter an option:  
 ```
 ### **Press 2 -> Press 1 - Calculate acidity**
 Please see the below example 
@@ -113,24 +111,57 @@ To calculate the pH please insert the concentration (moles per litre)
 ```
 ### **Press 2 -> Press 2 - Making a solution**
 Please see the below example
-
-
-
+```
+-> What is the formula of the solute?: H20
+-> How many grams of solute?: 45
+-> How many liters of solution?: 89
+0.0251
+```
 ### **Press 2 -> Press 3 - Calculate dilutions**
 Please see the below example
+```
+-> What is the formula of the solution?: H20
+-> What is the volume of the solution?: 56
+-> What is the molarity of the solution: 89
+-> What is the molarity after dilution?: 34
+{'Solute': 'H₂₀', 'Molarity': 34.0, 'Volume': 146.58823529411765}
+```
 
+### **Press 3 - Identify Chemicals and Chemical formulas**
+Pressing three from the main menu gives access to the submenu for identifying chemicals and chemical formulas. Type in the number to access the relevant option 
+```
+-------Identify Chemicals and Chemical formulas-------
+press 1 : Identify chemical formula
+press 2 : Identify chemical
+press 3 : Exit
 
+Enter an option: 
+```
+### **Press 3 -> Press 1 - Identify chemical formulas**
+Please see the below example
+```
+-> Enter the chemical name to identify its chemical formula: Ammonium sulfate
+--> The chemical formula of Ammonium sulfate is (NH4)2SO4
+```
+### **Press 3 -> Press 2 - Identify chemical**
+Please see the below example
+```
+-> Enter chemical formula to identify the chemical: Al2(SO4)3
+--> The chemical with a Al2(SO4)3 is Aluminium sulfate
+```
+### **Press 4 - Element data from the periodic table**
+Please see the below example
+```
+-> Enter the Element from the periodic table that you want information on: Uranium
+--> Printing information on Uranium from the periodic table
 
+Atomic No.      Name            Symbol          Mass
+92              Uranium         U               238.02891
+--> Data for element is printed according
+```
 
-
-
-
-
-
-
-
-## **Functionality & Features**
-Testing data can be found in the docs folder
+## **Testing**
+Testing data and rules followed can be found in the docs folder
 
 ## **Contact Links**
 
@@ -143,5 +174,5 @@ Vimeo -
 Trello - https://trello.com/b/k3Xc4LIL/t1a3
     
 ## **Acknowledgements**
-https://byjus.com/chemical-compound-formulas/
+https://byjus.com/chemical-compound-formulas/ - data for chemicals and chemical formulas
 

@@ -12,7 +12,7 @@ menu_options = (1, 2, 3, 4, 5)
 while True:
     # Print Main Menu
     print()
-    print('-------Menu-------')
+    print('-------Main Menu-------')
     print('press 1 : Calculate molar weight, density or number of mols')
     print('press 2 : Acidity(pH), making a solution and dilutions')
     print('press 3 : Identify Chemicals and Chemical formulas')
