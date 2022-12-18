@@ -183,7 +183,7 @@ Anushke - anushke.k@gmail.com
 
 Project link - https://github.com/nush16/AnushkeKarunaratna_T1A3
 
-Vimeo - 
+Vimeo - https://vimeo.com/782240121
 
 Trello - https://trello.com/b/k3Xc4LIL/t1a3
     
